@@ -7,7 +7,7 @@ import {
 
 function faqContent(faqContentArray: {question: string, answer: string, itemNum: number}[]){
         let faqArray = faqContentArray.map(faqItemObj => 
-            <AccordionItem value={"item-" + faqItemObj.itemNum}>
+            <AccordionItem value={"item-" + faqItemObj.itemNum} key={"item-" + faqItemObj.itemNum}>
                 <AccordionTrigger><strong className="text-left text-xl tracking-wide">{faqItemObj.question}</strong></AccordionTrigger>
                 <AccordionContent className="text-lg">{faqItemObj.answer}</AccordionContent>
             </AccordionItem>
