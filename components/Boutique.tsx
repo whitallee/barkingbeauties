@@ -14,7 +14,7 @@ export default function Boutique(){
                     Dress your pets in the latest trends with our chic and functional pet fashion line, from cozy sweaters to snazzy collars for special occasions.
                     <br/><br/>
                     <h4 className="font-semibold">Specialty Items</h4>
-                    Discover specialty items you won't find anywhere else, from handmade pet beds to personalized accessories.
+                    Discover specialty items you won&apos;t find anywhere else, from handmade pet beds to personalized accessories.
                     <br/><br/>
                     <h4 className="font-semibold">Online Store Coming Soon!</h4>
                     Shop from the comfort of your home with our soon-to-launch online store, offering delivery straight to your doorstep.
@@ -22,7 +22,7 @@ export default function Boutique(){
                     <h3 className="font-bold text-2xl py-4">Stay Tuned!</h3>
                     Keep an eye on our website and social media for updates on the grand opening. Sign up for our newsletter to be the first to know about exclusive offers, new arrivals, and special events.
                     <br/><br/>
-                    At Barking Beauties Pet Salon, our boutique is designed to celebrate the bond you share with your pets. We can't wait to share this exciting new chapter with you and your beloved pets!
+                    At Barking Beauties Pet Salon, our boutique is designed to celebrate the bond you share with your pets. We can&apos;t wait to share this exciting new chapter with you and your beloved pets!
                 </p>
             </div>
         </>
