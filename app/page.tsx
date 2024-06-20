@@ -14,10 +14,10 @@ export default function Home() {
     <div className="flex flex-col gap-8 max-w-full">
       <Welcome/>
       <Services/>
+      <AboutUs/>
       <Testimonials/>
       <Boutique/>
       <EventsCalendar/>
-      <AboutUs/>
       <OperatingHours/>
     </div>
   );
