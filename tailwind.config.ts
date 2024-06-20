@@ -1,3 +1,4 @@
+import { trace } from "console"
 import type { Config } from "tailwindcss"
 
 const config = {
@@ -67,10 +68,23 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "open-menu": {
+          '0%': { transform: 'scaleY(0)' },
+          '80%': { transform: 'scaleY(1.2)' },
+          '99%': { transform: 'scaleY(1)' },
+          '100%': { display: 'hidden' }
+        },
+        "close-menu": {
+          '0%': { transform: 'scaleY(1)' },
+          '80%': { transform: 'scaleY(0.2)' },
+          '99%': { transform: 'scaleY(0)' },
+          '100%': { display: 'default' }
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "open-menu": "open-menu 0.2s ease-in-out forwards",
       },
     },
   },

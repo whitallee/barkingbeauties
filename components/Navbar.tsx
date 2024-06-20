@@ -1,10 +1,5 @@
-import { Menu, PawPrint, ShoppingBasket, User } from "lucide-react";
+import { Menu, PawPrint, ShoppingBasket, User, X } from "lucide-react";
 import { Button } from "./ui/button";
-import {
-    Collapsible,
-    CollapsibleContent,
-    CollapsibleTrigger,
-  } from "@/components/ui/collapsible"
 
 import {
     Menubar,
@@ -21,7 +16,7 @@ import {
 export default function Navbar() {
     return(
         <div id="navbar" className="flex justify-between sticky top-0 w-svw px-6 sm:px-16 bg-gradient-to-b from-[var(--light-blue)] from-10% via-[var(--light-blue)] via-10% to-transparent backdrop-blur-[2px] z-[10000]">
-            <a href="/"><img src="/BBPS_logo.PNG" className="min-w-24 max-w-40 w-24 sm:w-40"></img></a>
+            <a href="/"><img src="/BBPS_logo.PNG" fetchPriority="high" className="min-w-24 max-w-40 w-24 sm:w-40"></img></a>
             <div className="flex gap-4 items-center pt-4">
                 <div className="gap-4 hidden min-[900px]:flex">
                     <a href="/#about-us"><Button variant={"secondary"}>About Us</Button></a>
@@ -34,10 +29,11 @@ export default function Navbar() {
                 <User className="h-8 w-8 hidden min-[900px]:block cursor-not-allowed"></User>
                 <Menubar className="min-[900px]:hidden flex items-center">
                     <MenubarMenu>
-                        <MenubarTrigger>
+                        <MenubarTrigger className="origin-top data-[state=open]:ani data-[state=closed]:ani">
                             <Menu className="h-8 w-8"></Menu>
+                            <X className="h-8 w-8 hidden"></X>
                         </MenubarTrigger>
-                        <MenubarContent>
+                        <MenubarContent className="mt-4 border-[3px] border-[var(--light-pink)]">
                             <MenubarItem>
                                 <div className="gap-4 flex flex-col">
                                     <a href="/#about-us"><Button variant={"secondary"}>About Us</Button></a>
