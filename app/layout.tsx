@@ -18,12 +18,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={ubuntu.className + " overflow-x-hidden flex flex-col items-center"}>
-        <Navbar></Navbar>
-        <main className="w-svw px-4 sm:px-16 flex flex-col items-center overflow-hidden max-w-[1024px]">
-          {children}
-        </main>
-        <Footer></Footer>
+      <body className={ubuntu.className + " overflow-x-hidden flex flex-col items-center bg-[var(--light-blue)]"}>
+        <div className="bg-white flex flex-col items-center">
+          <Navbar></Navbar>
+          <main className="w-svw px-4 sm:px-16 flex flex-col items-center overflow-hidden max-w-[1024px]">
+            {children}
+          </main>
+          <Footer></Footer>
+        </div>
       </body>
     </html>
   );
