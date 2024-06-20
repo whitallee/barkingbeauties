@@ -2,7 +2,7 @@ import { Instagram } from "lucide-react";
 
 export default function Footer(){
     return(
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-16 bg-black text-white px-4 sm:px-16 py-8 mt-8">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-16 bg-black text-white px-4 sm:px-16 py-8 mt-8 w-svw">
             <div className="flex flex-col gap-3">
                 <h3>Book an Appointment</h3>
                 <div className="w-full h-1 rounded-full bg-[var(--neutral-green)]"></div>

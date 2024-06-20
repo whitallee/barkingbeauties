@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Menu, PawPrint, ShoppingBasket, User, X } from "lucide-react";
 import { Button } from "./ui/button";
 
@@ -16,7 +17,7 @@ import {
 export default function Navbar() {
     return(
         <div id="navbar" className="flex justify-between sticky top-0 w-svw px-6 sm:px-16 bg-gradient-to-b from-[var(--light-blue)] from-10% via-[var(--light-blue)] via-10% to-transparent backdrop-blur-[2px] z-[10000]">
-            <a href="/"><img src="/BBPS_logo.PNG" fetchPriority="high" className="min-w-24 max-w-40 w-24 sm:w-40"></img></a>
+            <a href="/"><Image alt="Barking Beauties logo" src="/BBPS_logo.PNG" fetchPriority="high" width={160} height={128} className="min-w-24 max-w-40 w-24 sm:w-40" /></a>
             <div className="flex gap-4 items-center pt-4">
                 <div className="gap-4 hidden min-[900px]:flex">
                     <a href="/#about-us"><Button variant={"secondary"}>About Us</Button></a>

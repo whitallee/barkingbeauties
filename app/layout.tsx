@@ -18,9 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={ubuntu.className + " overflow-x-hidden"}>
+      <body className={ubuntu.className + " overflow-x-hidden flex flex-col items-center"}>
         <Navbar></Navbar>
-        <main className="w-svw px-4 sm:px-16 flex flex-col items-center overflow-hidden">
+        <main className="w-svw px-4 sm:px-16 flex flex-col items-center overflow-hidden max-w-[1024px]">
           {children}
         </main>
         <Footer></Footer>

@@ -9,7 +9,7 @@ import { QuoteIcon } from "lucide-react";
 
 function TestimonialItem({speakerName, quote}: {speakerName: string, quote: string}){
     return(
-        <CarouselItem className="basis-[80%] sm:basis-[50%] md:basis-[40%] xl:basis-[25%] ml-4 flex flex-col justify-between shadow-lg p-4 sm:p-8 gap-1 sm:gap-4 border-[5px] rounded-xl border-[var(--neutral-green)] bg-white">
+        <CarouselItem className="basis-[80%] sm:basis-[50%] md:basis-[40%] ml-4 flex flex-col justify-between shadow-lg p-4 sm:p-8 gap-1 sm:gap-4 border-[5px] rounded-xl border-[var(--neutral-green)] bg-white">
             <QuoteIcon className="text-[var(--light-blue)] fill-[var(--light-blue)] scale-150"/>
             <span className="indent-8 italic">{quote}</span>
             <div className="flex justify-between"><span className="tracking-tighter text-sm sm:text-md">⭐⭐⭐⭐⭐</span><span className="font-bold text-right text-sm sm:text-md">{speakerName.toUpperCase()}</span></div>

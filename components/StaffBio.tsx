@@ -1,4 +1,4 @@
-export default function Bio(){
+export default function StaffBio(){
     return(
         <div>
             
