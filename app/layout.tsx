@@ -22,7 +22,9 @@ export default function RootLayout({
         <div className="bg-[length:800px_800px] bg-white bg-repeat flex flex-col items-center" style={{backgroundImage: 'url("vine_background_transparent.svg")'}}>
           <div className="flex flex-col items-center bg-white bg-opacity-0">
             {/* <div className="flex flex-col items-center bg-gradient-to-r from-transparent via-white to-transparent"> */}
-            <div className="flex flex-col items-center" style={{background:"linear-gradient(to right, transparent 0%, rgba(255,255,255,0.95) 20%, rgba(255,255,255,0.95) 80%, transparent 100%)"}}>
+            <div className="flex flex-col items-center"
+              style={{
+                background:"linear-gradient(to right, transparent 0%, rgba(255,255,255,0.95) 10%, rgba(255,255,255,0.95) 90%, transparent 100%)"}}>
               <Navbar></Navbar>
               <main className="w-svw px-4 sm:px-16 flex flex-col items-center overflow-hidden max-w-[1024px]">
                 {children}
