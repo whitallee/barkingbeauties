@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export function Bio({alternate, imgSrc, name, blurb}: {alternate: Boolean, imgSrc: string, name: string, blurb: string}){
+function Bio({alternate, imgSrc, name, blurb}: {alternate: Boolean, imgSrc: string, name: string, blurb: string}){
     function alternateClass(altClassBool: Boolean): string {
         if (altClassBool) {
             return("flex-col sm:flex-row-reverse")
