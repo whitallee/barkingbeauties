@@ -4,7 +4,7 @@ function ServiceItem({serviceName, imgSrc}: {serviceName: string, imgSrc: string
     return(
         <div className="flex flex-col items-center">
             <h3 className="text-2xl p-2 bg-white rounded-xl mb-2 min-w-[50%] text-center">{serviceName}</h3>
-            <Image src={imgSrc} alt={imgSrc} objectFit="cover" width={600} height={600} fetchPriority="high" className="aspect-square object-cover rounded-xl border-[5px] border-[var(--neutral-green)] drop-shadow-md" />
+            <Image src={imgSrc} alt={imgSrc} width={600} height={600} fetchPriority="high" className="aspect-square object-cover rounded-xl border-[5px] border-[var(--neutral-green)] drop-shadow-md" />
         </div>
     )
 }
