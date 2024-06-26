@@ -12,8 +12,8 @@ function Bio({alternate, imgSrc, name, blurb}: {alternate: Boolean, imgSrc: stri
     return(
         <div className={"flex gap-8 items-center p-4 " + alternateClass(alternate)}>
             <div className="flex flex-col gap-2 items-center">
-                <Image alt={imgSrc} src={imgSrc} width={375} height={525} className="w-40 min-[500px]:w-60 sm:w-80 aspect-[3/4] object-cover rounded-xl border-[5px] border-[var(--light-pink)] shadow-md shaddow-inner max-w-[200px]" />
-                <h2 className="text-2xl">{name}</h2>
+                {/* <Image alt={imgSrc} src={imgSrc} width={375} height={525} className="w-40 min-[500px]:w-60 sm:w-80 aspect-[3/4] object-cover rounded-xl border-[5px] border-[var(--light-pink)] shadow-md shaddow-inner max-w-[200px]" /> */}
+                <h2 className="text-2xl bg-[var(--light-pink)] rounded-xl p-2 min-w-[8ch] text-center">{name}</h2>
             </div>
             <p className="max-w-[500px]">{blurb}</p>
         </div>
