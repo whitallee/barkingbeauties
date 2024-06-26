@@ -10,11 +10,8 @@ export default function Boutique(){
                     <h4 className="font-semibold">Exclusive Pet Products</h4>
                     Our boutique will feature a curated selection of high-quality pet products, including gourmet treats, stylish accessories, premium grooming supplies, and unique toys.
                     <br/><br/>
-                    <h4 className="font-semibold">Chic and Functional Pet Fashion</h4>
-                    Dress your pets in the latest trends with our chic and functional pet fashion line, from cozy sweaters to snazzy collars for special occasions.
-                    <br/><br/>
                     <h4 className="font-semibold">Specialty Items</h4>
-                    Discover specialty items you won&apos;t find anywhere else, from handmade pet beds to personalized accessories.
+                    Discover specialty items you won&apos;t find anywhere else, from animal-themed jewelry to personalized accessories.
                     <br/><br/>
                     <h4 className="font-semibold">Online Store Coming Soon!</h4>
                     Shop from the comfort of your home with our soon-to-launch online store, offering delivery straight to your doorstep.

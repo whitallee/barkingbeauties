@@ -2,12 +2,13 @@ import { Instagram } from "lucide-react";
 
 export default function Footer(){
     return(
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-16 bg-black text-white px-4 sm:px-16 py-8 mt-8 w-svw">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-16 bg-black text-white px-4 sm:px-16 py-8 mt-8 w-svw">
             <div className="flex flex-col gap-3">
                 <h3>Book an Appointment</h3>
                 <div className="w-full h-1 rounded-full bg-[var(--neutral-green)]"></div>
                 <span>Call us at <a href="tel:+17372917418" className="text-[var(--light-pink)] underline hover:text-[var(--light-blue)] hover:scale-105 transition-all">+1 (737) 291-7418</a></span>
                 <span>Or book online through <br className="min-[370px]:hidden"/>our <a href="" className="text-[var(--light-pink)] underline hover:text-[var(--light-blue)] hover:scale-105 transition-all">Booking Portal</a></span>
+                {/* <span>You can also email us at <a href="mailto:" className="text-[var(--light-pink)] underline hover:text-[var(--light-blue)] hover:scale-105 transition-all">our email</a></span> */}
             </div>
             {/* <div className="flex flex-col gap-3">
                 <h3>Check us out on Social Media</h3>
