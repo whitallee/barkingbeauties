@@ -51,19 +51,30 @@ export default function Home() {
           <span>Austin, TX 78758</span>
         </div>
       </section>
+      <motion.section custom={0} variants={fadeInAnimationVariants} initial="initial" animate="animate" className="flex justify-center items-center py-8">
+        <Link className="text-4xl text-white bg-black p-4 rounded-lg button-glow hover:scale-125" href="https://barkingbeautiesps.portal.gingrapp.com/#/public/login" target="_blank">Book Online Now</Link>
+      </motion.section>
       <section className="w-screen max-w-full bg-[#a1bf6b] flex flex-col sm:flex-row justify-center items-center gap-6 md:gap-20 py-4 md:py-8 text-xl md:text-2xl">
-        <motion.div custom={0} variants={fadeInAnimationVariants} initial="initial" animate="animate" className="flex gap-3 items-center"><Image className="w-12 h-12" src="/icons8-ear-cleaning-64.png" alt="Dog Ear Cleaning Icon" width={64} height={64} /><span>Anti-Fungal<br/>Ear Cleaning</span></motion.div>
-        <motion.div custom={1} variants={fadeInAnimationVariants} initial="initial" animate="animate" className="flex gap-3 items-center"><Image className="w-12 h-12" src="/icons8-nail-file-64.png" alt="Dog Ear Cleaning Icon" width={64} height={64} /><span>Nail Trimming<br/>and Filing</span></motion.div>
-        <motion.div custom={2} variants={fadeInAnimationVariants} initial="initial" animate="animate" className="flex gap-3 items-center"><Image className="w-12 h-12" src="/icons8-dispenser-64.png" alt="Dog Ear Cleaning Icon" width={64} height={64} /><span>Clarifying Shampoo<br/>and Conditioner</span></motion.div>
+        <motion.div custom={1} variants={fadeInAnimationVariants} initial="initial" animate="animate" className="flex gap-3 items-center"><Image className="w-12 h-12" src="/icons8-ear-cleaning-64.png" alt="Dog Ear Cleaning Icon" width={64} height={64} /><span>Anti-Fungal<br/>Ear Cleaning</span></motion.div>
+        <motion.div custom={2} variants={fadeInAnimationVariants} initial="initial" animate="animate" className="flex gap-3 items-center"><Image className="w-12 h-12" src="/icons8-nail-file-64.png" alt="Dog Ear Cleaning Icon" width={64} height={64} /><span>Nail Trimming<br/>and Filing</span></motion.div>
+        <motion.div custom={3} variants={fadeInAnimationVariants} initial="initial" animate="animate" className="flex gap-3 items-center"><Image className="w-12 h-12" src="/icons8-dispenser-64.png" alt="Dog Ear Cleaning Icon" width={64} height={64} /><span>Clarifying Shampoo<br/>and Conditioner</span></motion.div>
       </section>
       <section className="w-screen max-w-full bg-[url('/BBPS_Interior_GroomRoom.jpeg')] bg-cover bg-center p-4 sm:p-16 flex items-center justify-center min-h-[525px]">
-          <motion.div custom={4} variants={fadeInAnimationVariants} initial="initial" animate="animate" className="flex flex-col-reverse sm:flex-row items-center justify-center max-[800px]:gap-2">
+          <motion.div custom={4} variants={fadeInAnimationVariants} initial="initial" animate="animate" className="flex flex-col-reverse sm:flex-row items-center justify-center max-[950px]:gap-2">
             <Image loading="eager" src={"/LisaAndPoodle.jpeg"} height={772} width={579} alt="Lisa with a Poodle" className="w-64 rounded-lg"/>
-            <p className="bg-[rgba(243,232,255,0.85)] xl:text-2xl p-4 max-w-[64ch] rounded-r-lg max-[800px]:rounded-l-lg">Barking Beauties is owned and operated by experienced professional groomers. We pride ourselves on delivering top-tier grooming services for both cats and dogs. Our team of professionals ensures that each pet receives a personalized grooming experience tailored to their unique needs and temperament. We maintain a standard of high-quality and compassionate services for our clients.  Our salon is designed to be a stress-free and enjoyable environment for pets and staff, fostering a sense of well-being and mutual trust. We value our clients and believe in fair pricing and transparency about our grooming process.</p>
+            <p className="bg-[rgba(243,232,255,0.85)] text-xl xl:text-2xl p-4 max-w-[64ch] rounded-r-lg max-[950px]:rounded-l-lg">Barking Beauties is owned and operated by experienced professional groomers. We pride ourselves on delivering top-tier grooming services for both cats and dogs. Our team ensures that each pet receives a personalized grooming experience tailored to their unique needs and temperament. We maintain a standard of high-quality and compassionate services for our clients.  Our salon is designed to be a stress-free and enjoyable environment for pets and staff, fostering a sense of well-being and mutual trust. We value our clients and believe in fair pricing and transparency about our grooming process.</p>
           </motion.div>
       </section>
-      <section className="flex justify-center items-center pt-16">
+      <section className="flex justify-center items-center py-16">
         <Link className="text-4xl text-white bg-black p-4 rounded-lg button-glow hover:scale-125" href="https://barkingbeautiesps.portal.gingrapp.com/#/public/login" target="_blank">Book Online Now</Link>
+      </section>
+      <section className="pt-16">
+        <div className="overflow-hidden flex justify-center text-nowrap bg-yellow-600 rotate-6 lg:rotate-3 scale-[120%]">
+          CAUTION /// CAUTION /// CAUTION /// CAUTION /// CAUTION /// CAUTION /// CAUTION /// CAUTION /// CAUTION /// CAUTION /// CAUTION /// CAUTION /// CAUTION /// CAUTION
+        </div>
+        <div className="bg-yellow-500 text-nowrap overflow-hidden w-screen flex justify-center -rotate-6 lg:-rotate-3 -translate-y-6 lg:-translate-y-6 scale-[120%]">
+          WEBSITE STILL UNDER CONSTRUCTION /// WEBSITE STILL UNDER CONSTRUCTION /// WEBSITE STILL UNDER CONSTRUCTION /// WEBSITE STILL UNDER CONSTRUCTION /// WEBSITE STILL UNDER CONSTRUCTION
+        </div>
       </section>
       <div className="w-screen max-w-full footer-shadow"></div>
     </main>
