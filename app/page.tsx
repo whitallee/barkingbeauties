@@ -47,7 +47,7 @@ export default function Home() {
         <Image loading="eager" src={"/BBPS_Logo_NoBorder.png"} alt="Barking Beauties Pet Salon Proffessional Grooming, Baths, Spa for cats and dogs" width={150} height={150} className=" scale-115 min-[1025px]:scale-150 hidden min-[500px]:block" />
         <div className="hidden min-[700px]:flex flex-col items-end justify-center text-2xl min-[775px]:text-3xl text-nowrap">
           <span>9415 Burnet Road</span>
-          <span>Suite 100</span>
+          <span>Suite 101</span>
           <span>Austin, TX 78758</span>
         </div>
       </section>
