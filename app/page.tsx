@@ -51,7 +51,7 @@ export default function Home() {
           <span>Austin, TX 78758</span>
         </div>
       </section>
-      <motion.section custom={0} variants={fadeInAnimationVariants} initial="initial" animate="animate" className="flex justify-center items-center py-8">
+      <motion.section custom={0} variants={fadeInAnimationVariants} initial="initial" animate="animate" className="flex justify-center items-center py-8 sm:hidden">
         <Link className="text-4xl text-white bg-black p-4 rounded-lg button-glow hover:scale-125" href="https://barkingbeautiesps.portal.gingrapp.com/#/public/login" target="_blank">Book Online Now</Link>
       </motion.section>
       <section className="w-screen max-w-full bg-[#a1bf6b] flex flex-col sm:flex-row justify-center items-center gap-6 md:gap-20 py-4 md:py-8 text-xl md:text-2xl">
