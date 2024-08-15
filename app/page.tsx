@@ -41,10 +41,10 @@ export default function Home() {
         <div className="flex flex-col items-center min-[500px]:items-start justify-center gap-4 pt-4">
           <h1  className={greatVibes.className + " text-5xl min-[1025px]:text-7xl min-[1165px]:text-8xl glow text-nowrap"}>Barking Beauties</h1>
           <h1 className={greatVibes.className + " text-5xl min-[1025px]:text-7xl min-[1165px]:text-8xl glow min-[500px]:indent-16"}>Pet Salon</h1>
-          <Image loading="eager" src={"/BBPS_Logo_NoBorder.png"} alt="Barking Beauties Pet Salon Logo" width={150} height={150} className=" scale-115 min-[1025px]:scale-150 min-[500px]:hidden" />
+          <Image loading="eager" src={"/BBPS_Logo_NoBorder.png"} alt="Barking Beauties Pet Salon Proffessional Grooming, Baths, Spa for cats and dogs" width={150} height={150} className=" scale-115 min-[1025px]:scale-150 min-[500px]:hidden" />
           <h2 className="text-xl min-[1025px]:text-2xl min-[1165px]:text-3xl pb-4 text-nowrap min-[730px]:indent-4 min-[1025px]:indent-8 text-center min-[330px]:text-left">Elevate your pet<span className={inter.className}>&apos;</span>s<br className="min-[330px]:hidden"/> grooming experience</h2>
         </div>
-        <Image loading="eager" src={"/BBPS_Logo_NoBorder.png"} alt="Barking Beauties Pet Salon Logo" width={150} height={150} className=" scale-115 min-[1025px]:scale-150 hidden min-[500px]:block" />
+        <Image loading="eager" src={"/BBPS_Logo_NoBorder.png"} alt="Barking Beauties Pet Salon Proffessional Grooming, Baths, Spa for cats and dogs" width={150} height={150} className=" scale-115 min-[1025px]:scale-150 hidden min-[500px]:block" />
         <div className="hidden min-[700px]:flex flex-col items-end justify-center text-2xl min-[775px]:text-3xl text-nowrap">
           <span>9415 Burnet Road</span>
           <span>Suite 100</span>
@@ -55,9 +55,9 @@ export default function Home() {
         <Link className="text-4xl text-white bg-black p-4 rounded-lg button-glow hover:scale-125" href="https://barkingbeautiesps.portal.gingrapp.com/#/public/login" target="_blank">Book Online Now</Link>
       </motion.section>
       <section className="w-screen max-w-full bg-[#a1bf6b] flex flex-col sm:flex-row justify-center items-center gap-6 md:gap-20 py-4 md:py-8 text-xl md:text-2xl">
-        <motion.div custom={1} variants={fadeInAnimationVariants} initial="initial" animate="animate" className="flex gap-3 items-center"><Image className="w-12 h-12" src="/icons8-ear-cleaning-64.png" alt="Dog Ear Cleaning Icon" width={64} height={64} /><span>Anti-Fungal<br/>Ear Cleaning</span></motion.div>
-        <motion.div custom={2} variants={fadeInAnimationVariants} initial="initial" animate="animate" className="flex gap-3 items-center"><Image className="w-12 h-12" src="/icons8-nail-file-64.png" alt="Dog Ear Cleaning Icon" width={64} height={64} /><span>Nail Trimming<br/>and Filing</span></motion.div>
-        <motion.div custom={3} variants={fadeInAnimationVariants} initial="initial" animate="animate" className="flex gap-3 items-center"><Image className="w-12 h-12" src="/icons8-dispenser-64.png" alt="Dog Ear Cleaning Icon" width={64} height={64} /><span>Clarifying Shampoo<br/>and Conditioner</span></motion.div>
+        <motion.div custom={1} variants={fadeInAnimationVariants} initial="initial" animate="animate" className="flex gap-3 items-center"><Image className="w-12 h-12" src="/icons8-ear-cleaning-64.png" alt="Dog Cat Ear Cleaning Icon" width={64} height={64} /><span>Anti-Fungal<br/>Ear Cleaning</span></motion.div>
+        <motion.div custom={2} variants={fadeInAnimationVariants} initial="initial" animate="animate" className="flex gap-3 items-center"><Image className="w-12 h-12" src="/icons8-nail-file-64.png" alt="Dog Cat Nail Trim File Icon" width={64} height={64} /><span>Nail Trimming<br/>and Filing</span></motion.div>
+        <motion.div custom={3} variants={fadeInAnimationVariants} initial="initial" animate="animate" className="flex gap-3 items-center"><Image className="w-12 h-12" src="/icons8-dispenser-64.png" alt="Dog Cat Shampoo Icon" width={64} height={64} /><span>Clarifying Shampoo<br/>and Conditioner</span></motion.div>
       </section>
       <section className="w-screen max-w-full bg-[url('/BBPS_Interior_GroomRoom.jpeg')] bg-cover bg-center p-4 sm:p-16 flex items-center justify-center min-h-[525px]">
           <motion.div custom={4} variants={fadeInAnimationVariants} initial="initial" animate="animate" className="flex flex-col-reverse sm:flex-row items-center justify-center max-[950px]:gap-2">
@@ -69,9 +69,11 @@ export default function Home() {
         <Link className="text-4xl text-white bg-black p-4 rounded-lg button-glow hover:scale-125" href="https://barkingbeautiesps.portal.gingrapp.com/#/public/login" target="_blank">Book Online Now</Link>
       </section>
       <section className="w-screen max-w-full flex flex-col items-center justify-center">
-        <motion.div whileInView="animate" viewport={{once:true,}} custom={1} variants={fadeInAnimationVariants} initial="initial"><Image className="w-64 sm:w-96 rounded-lg scale-110 translate-x-2 sm:translate-x-24" loading="lazy" src={"/LabBath.jpg"} alt="Lab dog getting a bath" width={1024} height={682}/></motion.div>
-        <motion.div whileInView="animate" viewport={{once:true,}} custom={1} variants={fadeInAnimationVariants} initial="initial"><Image className="w-64 sm:w-96 rounded-lg scale-110 -translate-x-2 sm:-translate-x-24" loading="lazy" src={"/PoodleBeforeAndAfter.jpg"} alt="Poodle dog before and after getting a dog groom, haircut" width={903} height={1161}/></motion.div>
-        <motion.div whileInView="animate" viewport={{once:true,}} custom={1} variants={fadeInAnimationVariants} initial="initial"><Image className="w-64 sm:w-96 rounded-lg scale-110 translate-x-2 sm:translate-x-24" loading="lazy" src={"/DoodleCut.jpg"} alt="Doodle dog getting a groom, haircut" width={1254} height={836}/></motion.div>
+        <motion.div whileInView="animate" viewport={{once:true,}} custom={1} variants={fadeInAnimationVariants} initial="initial"><Image className="w-64 sm:w-96 rounded-lg scale-110 translate-x-2 sm:translate-x-24" loading="lazy" src={"/FrontDesk.JPEG"} alt="Front Desk of Barking Beauties Pet Salon, Spa, Grooming" width={2048} height={1536}/></motion.div>
+        <motion.div whileInView="animate" viewport={{once:true,}} custom={1} variants={fadeInAnimationVariants} initial="initial"><Image className="w-64 sm:w-96 rounded-lg scale-110 -translate-x-2 sm:-translate-x-24" loading="lazy" src={"/PinkDog.jpg"} alt="Poodle dog after a proffessional groom" width={981} height={1304}/></motion.div>
+        <motion.div whileInView="animate" viewport={{once:true,}} custom={1} variants={fadeInAnimationVariants} initial="initial"><Image className="w-64 sm:w-96 rounded-lg scale-110 translate-x-2 sm:translate-x-24" loading="lazy" src={"/GroomRoom.JPEG"} alt="Grooming Room for professional dog and cat grooming, haircuts" width={2048} height={1536}/></motion.div>
+        <motion.div whileInView="animate" viewport={{once:true,}} custom={1} variants={fadeInAnimationVariants} initial="initial"><Image className="w-64 sm:w-96 rounded-lg scale-110 -translate-x-2 sm:-translate-x-24" loading="lazy" src={"/BlueDog.jpg"} alt="Pomeranian dog after a proffessional groom" width={926} height={1234}/></motion.div>
+        <motion.div whileInView="animate" viewport={{once:true,}} custom={1} variants={fadeInAnimationVariants} initial="initial"><Image className="w-64 sm:w-96 rounded-lg scale-110 translate-x-2 sm:translate-x-24" loading="lazy" src={"/BathTubs.JPEG"} alt="Bathing tubs for our proffessional dog and cat bathers and groomers" width={2048} height={1536}/></motion.div>
       </section>
       <section className="pt-16">
         <div className="overflow-hidden flex justify-center text-nowrap bg-yellow-600 rotate-6 lg:rotate-3 scale-[120%]">
