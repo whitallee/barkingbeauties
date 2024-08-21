@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={monsterrat.className + " bg-purple-100"}>
+      <body className={monsterrat.className + " bg-[#bcb8da]"}>
         <nav className="w-screen max-w-full flex justify-center sm:justify-end items-center sm:px-20 pt-8 pb-2">
           <LinkMenu/>
         </nav>

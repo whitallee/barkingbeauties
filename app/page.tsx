@@ -36,7 +36,7 @@ export default function Home() {
   
 
   return (
-    <main className="bg-purple-100 min-h-screen text-gray-700 overflow-hidden">
+    <main className="bg-[#bcb8da] min-h-screen text-gray-700 overflow-hidden">
       <section className="w-screen max-w-full flex justify-center min-[500px]:justify-between items-center px-6 min-[900px]:px-20">
         <div className="flex flex-col items-center min-[500px]:items-start justify-center gap-4 pt-4">
           <h1  className={greatVibes.className + " text-5xl min-[1025px]:text-7xl min-[1165px]:text-8xl glow text-nowrap"}>Barking Beauties</h1>
@@ -52,9 +52,9 @@ export default function Home() {
         </div>
       </section>
       <motion.section custom={0} variants={fadeInAnimationVariants} initial="initial" animate="animate" className="flex justify-center items-center py-8 sm:hidden">
-        <Link className="text-4xl text-white bg-black p-4 rounded-lg button-glow hover:scale-125" href="https://barkingbeautiesps.portal.gingrapp.com/#/public/login" target="_blank">Book Online Now</Link>
+        <Link className="text-4xl text-black bg-white p-4 rounded-lg button-glow hover:scale-125" href="https://barkingbeautiesps.portal.gingrapp.com/#/public/login" target="_blank">Book Now</Link>
       </motion.section>
-      <section className="w-screen max-w-full bg-[#a1bf6b] flex flex-col sm:flex-row justify-center items-center gap-6 md:gap-20 py-4 md:py-8 text-xl md:text-2xl">
+      <section className="w-screen max-w-full bg-[#a2bd6f] flex flex-col sm:flex-row justify-between px-4 md:px-20 items-center gap-6 py-4 md:py-8 text-xl md:text-2xl">
         <motion.div custom={1} variants={fadeInAnimationVariants} initial="initial" animate="animate" className="flex gap-3 items-center"><Image className="w-12 h-12" src="/icons8-ear-cleaning-64.png" alt="Dog Cat Ear Cleaning Icon" width={64} height={64} /><span>Anti-Fungal<br/>Ear Cleaning</span></motion.div>
         <motion.div custom={2} variants={fadeInAnimationVariants} initial="initial" animate="animate" className="flex gap-3 items-center"><Image className="w-12 h-12" src="/icons8-nail-file-64.png" alt="Dog Cat Nail Trim File Icon" width={64} height={64} /><span>Nail Trimming<br/>and Filing</span></motion.div>
         <motion.div custom={3} variants={fadeInAnimationVariants} initial="initial" animate="animate" className="flex gap-3 items-center"><Image className="w-12 h-12" src="/icons8-dispenser-64.png" alt="Dog Cat Shampoo Icon" width={64} height={64} /><span>Clarifying Shampoo<br/>and Conditioner</span></motion.div>
@@ -66,7 +66,7 @@ export default function Home() {
           </motion.div>
       </section>
       <section className="flex justify-center items-center py-16">
-        <Link className="text-4xl text-white bg-black p-4 rounded-lg button-glow hover:scale-125" href="https://barkingbeautiesps.portal.gingrapp.com/#/public/login" target="_blank">Book Online Now</Link>
+        <Link className="text-4xl text-black bg-white p-4 rounded-lg button-glow hover:scale-125" href="https://barkingbeautiesps.portal.gingrapp.com/#/public/login" target="_blank">Book Now</Link>
       </section>
       <section className="w-screen max-w-full flex flex-col items-center justify-center">
         <motion.div whileInView="animate" viewport={{once:true,}} custom={1} variants={fadeInAnimationVariants} initial="initial"><Image className="w-64 sm:w-96 rounded-lg scale-110 translate-x-2 sm:translate-x-24" loading="lazy" src={"/FrontDesk.JPEG"} alt="Front Desk of Barking Beauties Pet Salon, Spa, Grooming" width={2048} height={1536}/></motion.div>
