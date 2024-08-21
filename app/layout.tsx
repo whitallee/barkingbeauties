@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import LinkMenu from "@/components/LinkMenu";
-import localFont from 'next/font/local'
+// import localFont from 'next/font/local'
 import Link from "next/link";
 import Footer from "@/components/Footer";
 
-const elaineKinandhita = localFont({
-  src: './elainekinandhita.regular.ttf',
-  display: 'swap'
-})
+const monsterrat = Montserrat({subsets:["latin"]})
+
+// const elaineKinandhita = localFont({
+//   src: './elainekinandhita.regular.ttf',
+//   display: 'swap'
+// })
 
 export const metadata: Metadata = {
   title: "Barking Beauties",
@@ -23,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={elaineKinandhita.className + " bg-purple-100"}>
+      <body className={monsterrat.className + " bg-purple-100"}>
         <nav className="w-screen max-w-full flex justify-center sm:justify-end items-center sm:px-20 pt-8 pb-2">
           <LinkMenu/>
         </nav>
