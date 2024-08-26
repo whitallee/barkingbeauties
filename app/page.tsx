@@ -47,9 +47,7 @@ export default function Home() {
 
       <AboutBBPS/>
 
-      <section className="flex justify-center items-center py-16">
-        <Link className="text-4xl bg-white p-4 rounded-lg button-glow hover:scale-125" href="https://barkingbeautiesps.portal.gingrapp.com/#/public/login" target="_blank">Book Now</Link>
-      </section>
+      <BookNow/>
 
       <section className="w-screen max-w-full flex flex-col items-center justify-center">
         <motion.div whileInView="animate" viewport={{once:true,}} custom={1} variants={fadeInAnimationVariants} initial="initial"><Image className="w-64 sm:w-96 rounded-lg scale-110 translate-x-2 sm:translate-x-24" loading="lazy" src={"/FrontDesk.JPEG"} alt="Front Desk of Barking Beauties Pet Salon, Spa, Grooming" width={2048} height={1536}/></motion.div>

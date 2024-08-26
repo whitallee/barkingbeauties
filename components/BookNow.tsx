@@ -20,7 +20,7 @@ const fadeInAnimationVariants = {
 
 export default function BookNow() {
     return (
-        <motion.section whileInView="animate" viewport={{once:true,}} custom={0} variants={fadeInAnimationVariants} initial="initial" animate="animate" className="flex justify-center items-center pt-3 pb-8">
+        <motion.section whileInView="animate" viewport={{once:true,}} custom={0} variants={fadeInAnimationVariants} initial="initial" animate="animate" className="flex justify-center items-center py-8">
             <Link className="text-4xl bg-white p-4 rounded-lg button-glow hover:scale-125" href="https://barkingbeautiesps.portal.gingrapp.com/#/public/login" target="_blank">Book Now</Link>
         </motion.section>
     )

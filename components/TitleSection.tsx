@@ -13,7 +13,7 @@ export default function TitleSection () {
                     <span>Austin, TX 78758</span>
                 </div>
             </div>
-            <h3 className="text-xl font-medium pb-4 text-center">Elevate your pet&apos;s<br className="min-[450px]:hidden"/> grooming experience</h3>
+            <h3 className="text-xl font-medium text-center">Elevate your pet&apos;s<br className="min-[450px]:hidden"/> grooming experience</h3>
         </section>
     )
 }
