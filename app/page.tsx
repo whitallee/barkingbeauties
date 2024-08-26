@@ -9,6 +9,7 @@ import TitleSection from "@/components/TitleSection";
 import BookNow from "@/components/BookNow";
 import ServicesSumary from "@/components/ServicesSummary";
 import AboutBBPS from "@/components/AboutBBPS";
+import GalleryItem from "@/components/GalleryItem";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -39,6 +40,8 @@ export default function Home() {
 
   return (
     <main className="min-h-screen overflow-hidden">
+      <Image className="absolute top-0 left-0 scale-[0.4] origin-top-left" src={"/VineCorner.png"} width={500} height={500} alt="Decorative Vine for Barking Beauties Pet Salon Aesthetic"/>
+
       <TitleSection/>
 
       <BookNow/>
@@ -49,12 +52,12 @@ export default function Home() {
 
       <BookNow/>
 
-      <section className="w-screen max-w-full flex flex-col items-center justify-center">
-        <motion.div whileInView="animate" viewport={{once:true,}} custom={1} variants={fadeInAnimationVariants} initial="initial"><Image className="w-64 sm:w-96 rounded-lg scale-110 translate-x-2 sm:translate-x-24" loading="lazy" src={"/FrontDesk.JPEG"} alt="Front Desk of Barking Beauties Pet Salon, Spa, Grooming" width={2048} height={1536}/></motion.div>
-        <motion.div whileInView="animate" viewport={{once:true,}} custom={1} variants={fadeInAnimationVariants} initial="initial"><Image className="w-64 sm:w-96 rounded-lg scale-110 -translate-x-2 sm:-translate-x-24" loading="lazy" src={"/PinkDog.jpg"} alt="Poodle dog after a proffessional groom" width={981} height={1304}/></motion.div>
-        <motion.div whileInView="animate" viewport={{once:true,}} custom={1} variants={fadeInAnimationVariants} initial="initial"><Image className="w-64 sm:w-96 rounded-lg scale-110 translate-x-2 sm:translate-x-24" loading="lazy" src={"/GroomRoom.JPEG"} alt="Grooming Room for professional dog and cat grooming, haircuts" width={2048} height={1536}/></motion.div>
-        <motion.div whileInView="animate" viewport={{once:true,}} custom={1} variants={fadeInAnimationVariants} initial="initial"><Image className="w-64 sm:w-96 rounded-lg scale-110 -translate-x-2 sm:-translate-x-24" loading="lazy" src={"/BlueDog.jpg"} alt="Pomeranian dog after a proffessional groom" width={926} height={1234}/></motion.div>
-        <motion.div whileInView="animate" viewport={{once:true,}} custom={1} variants={fadeInAnimationVariants} initial="initial"><Image className="w-64 sm:w-96 rounded-lg scale-110 translate-x-2 sm:translate-x-24" loading="lazy" src={"/BathTubs.JPEG"} alt="Bathing tubs for our proffessional dog and cat bathers and groomers" width={2048} height={1536}/></motion.div>
+      <section className="w-screen max-w-full grid grid-cols-1 gap-3 place-items-center px-4">
+        <GalleryItem src="/FrontDesk.JPEG" altTxt="Front Desk of Barking Beauties Pet Salon, Spa, Grooming"/>
+        <GalleryItem src="/PoodleCutoutLightPurple.png" altTxt="Poodle dog after a proffessional groom"/>
+        <GalleryItem src="/GroomRoom.JPEG" altTxt="Grooming Room for professional dog and cat grooming, haircuts"/>
+        <GalleryItem src="/LittleDogCutoutLightPurple.png" altTxt="Pomeranian dog after a proffessional groom"/>
+        <GalleryItem src="/BathTubs.JPEG" altTxt="Bathing tubs for our proffessional dog and cat bathers and groomers"/>
       </section>
 
       <section className="pt-16">
