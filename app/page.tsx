@@ -40,7 +40,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen overflow-hidden">
-      <Image className="absolute top-0 left-0 scale-[0.4] origin-top-left" src={"/VineCorner.png"} width={500} height={500} alt="Decorative Vine for Barking Beauties Pet Salon Aesthetic"/>
+      {/* <Image className="absolute top-0 left-0 scale-[0.4] origin-top-left" src={"/VineCorner.png"} width={500} height={500} alt="Decorative Vine for Barking Beauties Pet Salon Aesthetic"/> */}
 
       <TitleSection/>
 
