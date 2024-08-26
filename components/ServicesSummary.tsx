@@ -1,8 +1,22 @@
 'use client'
 
-import { fadeInAnimationVariants } from "@/app/page"
 import { motion } from "framer-motion"
 import Image from "next/image"
+
+const fadeInAnimationVariants = {
+    initial: {
+      opacity: 0,
+      y: 100,
+    },
+    animate: (index: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.7,
+        delay: 0.3 * index
+      }
+    })
+  }
 
 export default function ServicesSumary() {
     return (

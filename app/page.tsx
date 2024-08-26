@@ -16,7 +16,7 @@ import ServicesSumary from "@/components/ServicesSummary";
 //   display: 'swap'
 // })
 
-export const fadeInAnimationVariants = {
+const fadeInAnimationVariants = {
   initial: {
     opacity: 0,
     y: 100,
@@ -35,8 +35,6 @@ export const fadeInAnimationVariants = {
 // whileInView="animate" viewport={{once:true,}}
 
 export default function Home() {
-
-  
 
   return (
     <main className="min-h-screen text-[#351D48] overflow-hidden">
