@@ -8,6 +8,7 @@ import Link from "next/link";
 import TitleSection from "@/components/TitleSection";
 import BookNow from "@/components/BookNow";
 import ServicesSumary from "@/components/ServicesSummary";
+import AboutBBPS from "@/components/AboutBBPS";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -37,22 +38,17 @@ const fadeInAnimationVariants = {
 export default function Home() {
 
   return (
-    <main className="min-h-screen text-[#351D48] overflow-hidden">
+    <main className="min-h-screen overflow-hidden">
       <TitleSection/>
 
       <BookNow/>
 
       <ServicesSumary/>
 
-      <section className="w-screen max-w-full bg-[url('/BBPS_Interior_GroomRoom.jpeg')] bg-cover bg-center p-4 sm:p-16 flex items-center justify-center min-h-[525px]">
-          <motion.div custom={4} variants={fadeInAnimationVariants} initial="initial" animate="animate" className="flex flex-col-reverse sm:flex-row items-center justify-center max-[950px]:gap-2">
-            <Image loading="eager" src={"/LisaAndPoodle.jpeg"} height={772} width={579} alt="Lisa with a Poodle" className="w-64 rounded-lg"/>
-            <p className="bg-[rgba(243,232,255,0.85)] text-xl xl:text-2xl p-4 max-w-[64ch] rounded-r-lg max-[950px]:rounded-l-lg">Barking Beauties is owned and operated by experienced professional groomers. We pride ourselves on delivering top-tier grooming services for both cats and dogs. Our team ensures that each pet receives a personalized grooming experience tailored to their unique needs and temperament. We maintain a standard of high-quality and compassionate services for our clients.  Our salon is designed to be a stress-free and enjoyable environment for pets and staff, fostering a sense of well-being and mutual trust. We value our clients and believe in fair pricing and transparency about our grooming process.</p>
-          </motion.div>
-      </section>
+      <AboutBBPS/>
 
       <section className="flex justify-center items-center py-16">
-        <Link className="text-4xl text-black bg-white p-4 rounded-lg button-glow hover:scale-125" href="https://barkingbeautiesps.portal.gingrapp.com/#/public/login" target="_blank">Book Now</Link>
+        <Link className="text-4xl bg-white p-4 rounded-lg button-glow hover:scale-125" href="https://barkingbeautiesps.portal.gingrapp.com/#/public/login" target="_blank">Book Now</Link>
       </section>
 
       <section className="w-screen max-w-full flex flex-col items-center justify-center">
