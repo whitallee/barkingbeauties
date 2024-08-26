@@ -32,3 +32,8 @@
 .text-glow {
   text-shadow: rgb(197, 73, 204) 1px 0 10px;
 }
+
+.text-border {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
