@@ -146,7 +146,7 @@ export default function PriceSheetBySize({ prices, largerDog }: { prices: string
                     </div>
                 </div>
             </div>
-            { largerDog ?
+            { largerDog && (service==="0" || service==="1") ?
             <span className="pt-2 text-center">
                 *For Doodles that are medium or larger:<br className="hidden sm:block"/> + $15-25  depending on style of cut and condition of coat*
             </span>
