@@ -21,7 +21,7 @@ export default function Pricing () {
                         <li>X-Large: <span className="font-normal">76+ lbs</span></li>
                     </ul>
                 </div>
-                <Tabs defaultValue="account" className="bg-[#e7e7f9] px-1 py-4 sm:px-4 rounded-lg flex flex-col items-center">
+                <Tabs defaultValue="account" className="bg-[#e7e7f9] px-1 pb-1 pt-4 sm:px-4 sm:pb-4 w-full max-w-[650.54px] rounded-lg flex flex-col items-center">
                     <h2 className="text-2xl font-bold text-center sm:pb-2">Select a Size</h2>
                     <h2 className="text-lg font-bold text-center pb-2 sm:hidden">Then Choose a Service</h2>
                     <TabsList className="bg-[#351D48] text-white">
@@ -87,7 +87,7 @@ export default function Pricing () {
             </div>
 
 
-            <div className="w-screen max-w-full footer-shadow py-2"></div>
+            <div className="w-screen max-w-full footer-shadow py-1"></div>
         </main>
     )
 }

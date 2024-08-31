@@ -12,13 +12,13 @@ import {
   
 
 export default function PriceSheetBySize({ prices }: { prices: string[] }) {
-    const [service, setService] = useState("0")
+    const [service, setService] = useState("")
 
     return (
-        <div className="flex gap-1 sm:gap-2">
+        <div className="flex flex-row w-full gap-1 sm:gap-2">
             <div className="border-2 border-[#351D48] rounded-lg">
                 <h3 className="p-1 sm:p-2 text-normal font-semibold h-16 flex items-center text-center">ITEMS INCLUDED:</h3>
-                <ul className="text-xs w-[164.01px] sm:w-[26ch] flex flex-col">
+                <ul className="text-xs flex-grow sm:w-[26ch] flex flex-col font-semibold leading-none sm:leading-snug">
                     <li className="p-1 sm:p-2 h-12 flex items-center bg-[#DAD6F6]">HEAD TO TAIL HAIRCUT</li>
                     <li className="p-1 sm:p-2 h-12 flex items-center">FEET, FACE, UNDERBELLY, TAIL, AND SANITARY TRIM</li>
                     <li className="p-1 sm:p-2 h-12 flex items-center bg-[#DAD6F6]">CLARIFYING AND HYPOALLERGENIC SHAMPOO</li>
@@ -39,7 +39,7 @@ export default function PriceSheetBySize({ prices }: { prices: string[] }) {
                     {/* <h3 className="p-2 text-normal font-semibold h-16 flex items-center text-center">THE WORKS HAIRCUT</h3> */}
                     <Select onValueChange={setService}>
                         <SelectTrigger className="h-16">
-                            <SelectValue placeholder="THE WORKS HAIRCUT" />
+                            <SelectValue placeholder="SERVICE" />
                         </SelectTrigger>
                         <SelectContent>
                             <SelectItem value="0">THE WORKS HAIRCUT</SelectItem>
