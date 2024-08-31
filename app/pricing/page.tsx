@@ -21,7 +21,7 @@ export default function Pricing () {
                         <li>X-Large: <span className="font-normal">76+ lbs</span></li>
                     </ul>
                 </div>
-                <Tabs defaultValue="account" className="bg-[#e7e7f9] px-1 pb-1 pt-4 sm:px-4 sm:pb-4 w-full max-w-[650.54px] rounded-lg flex flex-col items-center">
+                <Tabs defaultValue="account" className="bg-[#e7e7f9] px-1 pb-2 pt-4 sm:px-4 sm:pb-4 w-full max-w-[650.54px] rounded-lg flex flex-col items-center">
                     <h2 className="text-2xl font-bold text-center sm:pb-2">Select a Size</h2>
                     <h2 className="text-lg font-bold text-center pb-2 sm:hidden">Then Choose a Service</h2>
                     <TabsList className="bg-[#351D48] text-white">
@@ -32,19 +32,19 @@ export default function Pricing () {
                         <TabsTrigger className="text-xs sm:text-base px-[6px] sm:px-[12px]" value="xl">X-Large</TabsTrigger>
                     </TabsList>
                     <TabsContent value="xs">
-                        <PriceSheetBySize prices={["$65-70", "$50-55", "$35-40"]} />
+                        <PriceSheetBySize prices={["$65-70", "$50-55", "$35-40"]} largerDog={false}/>
                     </TabsContent>
                     <TabsContent value="sm">
-                        <PriceSheetBySize prices={["$75-85", "$60-65", "$45-50"]} />
+                        <PriceSheetBySize prices={["$75-85", "$60-65", "$45-50"]} largerDog={false}/>
                     </TabsContent>
                     <TabsContent value="md">
-                        <PriceSheetBySize prices={["$95-120", "$70-80", "$55"]} />
+                        <PriceSheetBySize prices={["$95-120", "$70-80", "$55"]} largerDog={true} />
                     </TabsContent>
                     <TabsContent value="lg">
-                        <PriceSheetBySize prices={["$130-145", "$85-110", "$60-70"]} />
+                        <PriceSheetBySize prices={["$130-145", "$85-110", "$60-70"]} largerDog={true} />
                     </TabsContent>
                     <TabsContent value="xl">
-                        <PriceSheetBySize prices={["$150-160", "$115-125", "$76+"]} />
+                        <PriceSheetBySize prices={["$150-160", "$115-125", "$76+"]} largerDog={true} />
                     </TabsContent>
                 </Tabs>
                 <div className="rounded-lg bg-[#e7e7f9] px-1 pb-1 pt-4 sm:px-4 sm:pb-4 w-full max-w-[650.54px]">
