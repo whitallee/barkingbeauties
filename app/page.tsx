@@ -50,7 +50,9 @@ export default function Home() {
 
       <AboutBBPS/>
 
-      <BookNow/>
+      <section className="h-[800px] p-4 flex justify-center items-center">
+        <iframe className="max-w-[640px] rounded-xl" src="https://booking.moego.pet/ol/BarkingBeautiesPetSalon/book?utm_medium=embed" width="100%" height="100%" frameBorder="0" title="Online booking" scrolling="no" ></iframe>
+      </section>
 
       <section className="w-screen max-w-full grid grid-cols-1 gap-3 place-items-center px-4">
         <GalleryItem src="/FrontDesk.JPEG" altTxt="Front Desk of Barking Beauties Pet Salon, Spa, Grooming"/>
@@ -59,6 +61,8 @@ export default function Home() {
         <GalleryItem src="/LittleDogCutoutLightPurple.png" altTxt="Pomeranian dog after a proffessional groom"/>
         <GalleryItem src="/BathTubs.JPEG" altTxt="Bathing tubs for our proffessional dog and cat bathers and groomers"/>
       </section>
+
+      <BookNow/>
 
       <section className="pt-16">
         <div className="overflow-hidden flex justify-center text-nowrap bg-[#e5d896] rotate-6 lg:rotate-3 scale-[120%]">
