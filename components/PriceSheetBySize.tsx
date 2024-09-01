@@ -1,7 +1,7 @@
 'use client'
 
 import { Check, X } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
     Select,
     SelectContent,
@@ -12,13 +12,39 @@ import {
   
 
 export default function PriceSheetBySize({ prices, largerDog }: { prices: string[], largerDog: boolean }) {
+
+    function getWindowDimensions() {
+        const { innerWidth: width, innerHeight: height } = window;
+        return {
+          width,
+          height
+        };
+    }
+      
+      function useWindowDimensions() {
+        const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+      
+        useEffect(() => {
+          function handleResize() {
+            setWindowDimensions(getWindowDimensions());
+          }
+      
+          window.addEventListener('resize', handleResize);
+          return () => window.removeEventListener('resize', handleResize);
+        }, []);
+      
+        return windowDimensions;
+    }
+
     const [service, setService] = useState("")
+    const { width, height } = useWindowDimensions()
+    // const [selected, setSelected] = useState(false)
 
     return (
         <div className="flex flex-col justify-center items-center">
             <div className="flex flex-row w-full gap-1 sm:gap-2">
                 <div className="border-2 border-[#351D48] rounded-lg">
-                    <h3 className="p-1 sm:p-2 text-normal font-semibold h-16 flex items-center text-center">ITEMS INCLUDED:</h3>
+                    <h3 className="p-1 sm:p-2 text-normal font-semibold h-16 flex items-center text-center">ITEMS OFFERED:</h3>
                     <ul className="text-xs flex-grow sm:w-[26ch] flex flex-col font-semibold leading-none sm:leading-snug">
                         <li className="p-1 sm:p-2 h-12 flex items-center bg-[#DAD6F6]">HEAD TO TAIL HAIRCUT</li>
                         <li className="p-1 sm:p-2 h-12 flex items-center">FEET, FACE, UNDERBELLY, TAIL, AND SANITARY TRIM</li>
@@ -37,7 +63,10 @@ export default function PriceSheetBySize({ prices, largerDog }: { prices: string
                 <div className="sm:hidden">
                     <div className="w-32 border-2 border-[#351D48] rounded-lg flex flex-col items-center">
                         {/* <h3 className="p-2 text-normal font-semibold h-16 flex items-center text-center">THE WORKS HAIRCUT</h3> */}
-                        <Select onValueChange={setService}>
+                        <Select onValueChange={(val) => {
+                            setService(val)
+                            // setSelected(true)
+                        }}>
                             <SelectTrigger className="h-16">
                                 <SelectValue placeholder="SERVICE" />
                             </SelectTrigger>
@@ -146,7 +175,7 @@ export default function PriceSheetBySize({ prices, largerDog }: { prices: string
                     </div>
                 </div>
             </div>
-            { largerDog && (service==="0" || service==="1") ?
+            { (largerDog && (service==="0" || service==="1")) || (largerDog && width>640) ?
             <span className="pt-2 text-center">
                 *For Doodles that are medium or larger:<br className="hidden sm:block"/> + $15-25  depending on style of cut and condition of coat*
             </span>

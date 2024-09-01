@@ -6,7 +6,7 @@ import { Check, X } from "lucide-react"
 export default function Pricing () {
     return (
         <main className="min-h-screen w-screen max-w-full flex flex-col gap-4 justify-start items-center pt-4 sm:px-1 px-2">
-            <h1 className="text-4xl text-center px-1">Our Services and Prices</h1>
+            <h1 className="text-4xl text-center px-1 tracking-widest">OUR SERVICES AND PRICES</h1>
 
 
 
@@ -21,7 +21,7 @@ export default function Pricing () {
                         <li>X-Large: <span className="font-normal">76+ lbs</span></li>
                     </ul>
                 </div>
-                <Tabs defaultValue="account" className="bg-[#e7e7f9] px-1 pb-2 pt-4 sm:px-4 sm:pb-4 w-full max-w-[650.54px] rounded-lg flex flex-col items-center">
+                <Tabs defaultValue="account" className="bg-[#e7e7f9] px-2 pb-2 pt-4 sm:px-4 sm:pb-4 w-full max-w-[650.54px] rounded-lg flex flex-col items-center">
                     <h2 className="text-2xl font-bold text-center sm:pb-2">Select a Size</h2>
                     <h2 className="text-lg font-bold text-center pb-2 sm:hidden">Then Choose a Service</h2>
                     <TabsList className="bg-[#351D48] text-white">
@@ -38,16 +38,16 @@ export default function Pricing () {
                         <PriceSheetBySize prices={["$75-85", "$60-65", "$45-50"]} largerDog={false}/>
                     </TabsContent>
                     <TabsContent value="md">
-                        <PriceSheetBySize prices={["$95-120", "$70-80", "$55"]} largerDog={true} />
+                        <PriceSheetBySize prices={["$95-120*", "$70-80*", "$55"]} largerDog={true} />
                     </TabsContent>
                     <TabsContent value="lg">
-                        <PriceSheetBySize prices={["$130-145", "$85-110", "$60-70"]} largerDog={true} />
+                        <PriceSheetBySize prices={["$130-145*", "$85-110*", "$60-70"]} largerDog={true} />
                     </TabsContent>
                     <TabsContent value="xl">
-                        <PriceSheetBySize prices={["$150-160", "$115-125", "$76+"]} largerDog={true} />
+                        <PriceSheetBySize prices={["$150-160*", "$115-125*", "$76+"]} largerDog={true} />
                     </TabsContent>
                 </Tabs>
-                <div className="rounded-lg bg-[#e7e7f9] px-1 pb-1 pt-4 sm:px-4 sm:pb-4 w-full max-w-[650.54px]">
+                <div className="rounded-lg bg-[#e7e7f9] px-2 pb-2 pt-4 sm:px-4 sm:pb-4 w-full max-w-[650.54px]">
                     <h2 className="text-2xl pb-2 font-bold text-center">Add-On Services</h2>
                     <ul className="border-2 border-[#351D48] rounded-lg overflow-hidden">
                         <li className="flex justify-between px-1 sm:px-2 py-2 bg-[#DAD6F6]">
