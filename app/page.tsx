@@ -61,10 +61,10 @@ export default function Home() {
       </section>
 
       <section className="pt-16">
-        <div className="overflow-hidden flex justify-center text-nowrap bg-yellow-600 rotate-6 lg:rotate-3 scale-[120%]">
+        <div className="overflow-hidden flex justify-center text-nowrap bg-[#e5d896] rotate-6 lg:rotate-3 scale-[120%]">
           CAUTION /// CAUTION /// CAUTION /// CAUTION /// CAUTION /// CAUTION /// CAUTION /// CAUTION /// CAUTION /// CAUTION /// CAUTION /// CAUTION /// CAUTION /// CAUTION
         </div>
-        <div className="bg-yellow-500 text-nowrap overflow-hidden w-screen flex justify-center -rotate-6 lg:-rotate-3 -translate-y-6 lg:-translate-y-6 scale-[120%]">
+        <div className="bg-[#ece6b6] text-nowrap overflow-hidden w-screen flex justify-center -rotate-6 lg:-rotate-3 -translate-y-6 lg:-translate-y-6 scale-[120%]">
           WEBSITE STILL UNDER CONSTRUCTION /// WEBSITE STILL UNDER CONSTRUCTION /// WEBSITE STILL UNDER CONSTRUCTION /// WEBSITE STILL UNDER CONSTRUCTION /// WEBSITE STILL UNDER CONSTRUCTION
         </div>
       </section>
