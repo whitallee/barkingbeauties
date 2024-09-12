@@ -10,6 +10,7 @@ import BookNow from "@/components/BookNow";
 import ServicesSumary from "@/components/ServicesSummary";
 import AboutBBPS from "@/components/AboutBBPS";
 import GalleryItem from "@/components/GalleryItem";
+import Hours from "@/components/Hours";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -45,6 +46,8 @@ export default function Home() {
       <TitleSection/>
 
       <BookNow/>
+
+      <Hours/>
 
       <ServicesSumary/>
 
