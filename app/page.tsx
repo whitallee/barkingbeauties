@@ -51,6 +51,11 @@ export default function Home() {
 
       <ServicesSumary/>
 
+      <div className="flex flex-col justify-center items-center p-6 text-2xl bg-[#351D48]/ gap-4">
+        <span className="font-semibold">Questions?</span>
+        <Link className="bg-white p-2 rounded-lg hover:scale-110 transition-all font-semibold button-glow" href="/ask-a-groomer">Ask a groomer!</Link>
+      </div>
+
       <AboutBBPS/>
 
       <section className="h-[700px] p-4 flex justify-center items-center">
@@ -67,14 +72,14 @@ export default function Home() {
 
       <BookNow/>
 
-      <section className="pt-16">
+      {/* <section className="pt-16">
         <div className="overflow-hidden flex justify-center text-nowrap bg-[#e5d896] rotate-6 lg:rotate-3 scale-[120%]">
           CAUTION /// CAUTION /// CAUTION /// CAUTION /// CAUTION /// CAUTION /// CAUTION /// CAUTION /// CAUTION /// CAUTION /// CAUTION /// CAUTION /// CAUTION /// CAUTION
         </div>
         <div className="bg-[#ece6b6] text-nowrap overflow-hidden w-screen flex justify-center -rotate-6 lg:-rotate-3 -translate-y-6 lg:-translate-y-6 scale-[120%]">
           WEBSITE STILL UNDER CONSTRUCTION /// WEBSITE STILL UNDER CONSTRUCTION /// WEBSITE STILL UNDER CONSTRUCTION /// WEBSITE STILL UNDER CONSTRUCTION /// WEBSITE STILL UNDER CONSTRUCTION
         </div>
-      </section>
+      </section> */}
 
       <div className="w-screen max-w-full footer-shadow"></div>
     </main>

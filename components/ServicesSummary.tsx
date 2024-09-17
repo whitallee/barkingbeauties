@@ -23,9 +23,9 @@ export default function ServicesSumary() {
             <p className="text-center sm:max-w-xs">Our salon specializes in skin and coat health, doodles, and cats, but we can do so much more!</p>
             <ul className="list-disc pl-6 flex flex-col gap-3">
                 <motion.li whileInView="animate" viewport={{once:true,}} custom={1} variants={fadeInAnimationVariants} initial="initial">Full Service Bath and Nails</motion.li>
-                <motion.li whileInView="animate" viewport={{once:true,}} custom={2} variants={fadeInAnimationVariants} initial="initial">Teeth Brushing</motion.li>
-                <motion.li whileInView="animate" viewport={{once:true,}} custom={3} variants={fadeInAnimationVariants} initial="initial">Head to Toe Haircuts</motion.li>
-                <motion.li whileInView="animate" viewport={{once:true,}} custom={4} variants={fadeInAnimationVariants} initial="initial">Walk-in Services available upon request</motion.li>
+                <motion.li whileInView="animate" viewport={{once:true,}} custom={1} variants={fadeInAnimationVariants} initial="initial">Teeth Brushing</motion.li>
+                <motion.li whileInView="animate" viewport={{once:true,}} custom={1} variants={fadeInAnimationVariants} initial="initial">Head to Toe Haircuts</motion.li>
+                <motion.li whileInView="animate" viewport={{once:true,}} custom={1} variants={fadeInAnimationVariants} initial="initial">Walk-in Services available upon request</motion.li>
             </ul>
         </section>
     )
