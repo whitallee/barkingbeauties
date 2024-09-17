@@ -32,9 +32,11 @@ export default function AskAGroomer () {
         console.log(await response.json())
 
         if (response.status === 500) {
-            alert("Error sending email, please try again later.")
+            setSending(false)
+            alert("Error sending email, please try again later, or send an email directly to barkingbeautiesps@gmail.com'")
         }
         else if (response.ok) {
+            setSending(false)
             alert("Email sent successfully")
             router.push('/')
         }
