@@ -17,7 +17,7 @@ export async function POST(request) {
 
         const mailOption = {
             from: 'website.mail@bbpetsalon.com',
-            to: 'whitallee@gmail.com',//'barkingbeautiesps@gmail.com',
+            to: 'barkingbeautiesps@gmail.com',
             subject: `Message from 'bbpetsalon.com': ${subject}`,
             replyTo: `${userEmail}`,
             html: `
