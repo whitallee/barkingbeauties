@@ -29,7 +29,7 @@ export default function AboutBBPS() {
                 </motion.div>
             </div> */}
             <div className="bg-[#E8E6F9] w-full flex justify-center">
-              <motion.p className="text-xl text-center px-4 py-6 max-w-[50ch] rounded-lg" whileInView="animate" viewport={{once:true,}} custom={1} variants={fadeInAnimationVariants} initial="initial">Barking Beauties Pet Salon prides itself on upholding a high standard of care for all furry clients that walk through our doors. We prioritize the comfort and happiness of both pets and their human companions, ensuring a positive and stress-free grooming experience for all. At Barking Beauties Pet Salon, we believe that a well-groomed pet is a happy pet, and we strive to provide exceptional service that exceeds expectations.</motion.p>
+              <motion.p className="text-xl px-6 py-8 sm:px-0 max-w-[640px] rounded-lg" whileInView="animate" viewport={{once:true,}} custom={1} variants={fadeInAnimationVariants} initial="initial">Barking Beauties Pet Salon prides itself on upholding a high standard of care for all furry clients that walk through our doors. We prioritize the comfort and happiness of both pets and their human companions, ensuring a positive and stress-free grooming experience for all. At Barking Beauties Pet Salon, we believe that a well-groomed pet is a happy pet, and we strive to provide exceptional service that exceeds expectations.</motion.p>
             </div>
         </section>
     )
