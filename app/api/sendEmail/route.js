@@ -6,19 +6,18 @@ export async function POST(request) {
         const { subject, message, userEmail } = await request.json();
 
         const transporter = nodemailer.createTransport({
-            service: 'Gmail',
-            host: 'smtp.gmail.com',
+            host: 'smtp.zoho.com',
             port: 465,
             secure: true,
             auth: {
-                user: 'barkingbeautiesmail@gmail.com',
-                pass: process.env.BBPS_MAIL_PASSWORD
+                user: 'website.mail@bbpetsalon.com',
+                pass: process.env.WMBBPS_PASS
             }
         })
 
         const mailOption = {
-            from: 'barkingbeautiesmail@gmail.com',
-            to: 'barkingbeautiesps@gmail.com',
+            from: 'website.mail@bbpetsalon.com',
+            to: 'whitallee@gmail.com',//'barkingbeautiesps@gmail.com',
             subject: `Message from 'bbpetsalon.com': ${subject}`,
             replyTo: `${userEmail}`,
             html: `
