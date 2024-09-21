@@ -6,7 +6,7 @@ import { Check, X } from "lucide-react"
 export default function Pricing () {
     return (
         <main className="min-h-screen w-screen max-w-full flex flex-col gap-4 justify-start items-center pt-4 sm:px-1 px-2">
-            <h1 className="text-4xl text-center px-1 tracking-widest">OUR SERVICES AND PRICES</h1>
+            <h1 className="text-3xl text-center px-1 tracking-widest font-semibold">OUR SERVICES AND PRICES</h1>
 
 
 

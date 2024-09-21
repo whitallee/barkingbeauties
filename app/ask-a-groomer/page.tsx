@@ -46,7 +46,7 @@ export default function AskAGroomer () {
         <main className="w-screen max-w-full flex flex-col items-center justify-start">
             <form onSubmit={sendMail} className="w-full space-y-6 px-4 sm:px-8 pt-8 max-w-[720px]">
                 <div className="flex flex-col items-center w-full justify-start">
-                    <h1 className="text-xl font-semibold">Ask a groomer!</h1>
+                    <h1 className="text-3xl font-semibold tracking-widest">ASK A GROOMER</h1>
                 </div>
                 <div className="relative flex flex-col space-y-1">
                     <label htmlFor="subject" className="text-sm font-light text-gray-500">Subject</label>

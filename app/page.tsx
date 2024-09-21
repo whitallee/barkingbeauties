@@ -52,8 +52,8 @@ export default function Home() {
       <ServicesSumary/>
 
       <div className="flex flex-col justify-center items-center p-6 text-2xl bg-[#351D48]/ gap-4">
-        <span className="font-semibold">Questions?</span>
-        <Link className="bg-white p-2 rounded-lg hover:scale-110 transition-all font-semibold button-glow" href="/ask-a-groomer">Ask a groomer!</Link>
+        <span className="">Questions?</span>
+        <Link className="bg-white p-2 rounded-lg hover:scale-110 transition-all button-glow" href="/ask-a-groomer">Ask a groomer!</Link>
       </div>
 
       <AboutBBPS/>
