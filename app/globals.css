@@ -13,6 +13,7 @@
 
   }
 } */
+html { scroll-behavior: smooth; }
 
 .glow {
   text-shadow: rgb(197, 73, 204) 1px 0 15px;
