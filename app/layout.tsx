@@ -10,7 +10,7 @@ const monsterrat = Montserrat({subsets:["latin"]})
 
 export const metadata: Metadata = {
   title: "Barking Beauties",
-  description: "Pet Salon, Spa, Grooming to treat your dog or cat",
+  description: "Pet Salon, Spa, Grooming to treat your dog or cat: North Austin, Texas",
 };
 
 export default function RootLayout({
@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={monsterrat.className + " bg-[#DAD6F6] text-[#351D48]"}>
         <GoogleAnalytics />
-        <nav className="w-screen max-w-full flex justify-center sm:justify-end items-center sm:px-20 pt-8 pb-2">
+        <nav className="w-screen max-w-full flex justify-center lg:justify-end items-center sm:px-20 pt-8 pb-2">
           <LinkMenu/>
         </nav>
         {children}
