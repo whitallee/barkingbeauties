@@ -16,21 +16,22 @@ export default function Footer(){
           <h3>Hours</h3>
           <div className="bg-purple-900 w-full h-[2px]"></div>
           <div className="flex flex-col text-lg">
-            <span>Sun | 8:30AM-3:00PM</span>
-            <span>Mon | Closed</span>
-            <span>Tue | 8:30AM-3:00PM</span>
-            <span>Wed | Closed</span>
-            <span>Thu | 8:30AM-3:00PM</span>
-            <span>Fri | Closed</span>
-            <span>Sat | 8:30AM-3:00PM</span>
+            <span>Mon | 8:30AM-6:00PM</span>
+            <span>Tue | 8:30AM-6:00PM</span>
+            <span>Wed | 8:30AM-6:00PM</span>
+            <span>Thu | 8:30AM-6:00PM</span>
+            <span>Fri | 10:00AM-6:00PM</span>
+            <span>Sat | 8:30AM-6:00PM</span>
+            <span>Sun | Closed</span>
           </div>
         </div>
         <div>
           <h3>Contact</h3>
           <div className="bg-purple-900 w-full h-[2px]"></div>
           <div className="flex flex-col text-lg">
-            <span>737-239-5747</span>
-            <span className="flex flex-row md:flex-col lg:flex-row">barkingbeautiesps@<span>gmail.com</span></span>
+            <Link href="tel:+17372395747">737-239-5747</Link>
+            <Link href="mailto:barkingbeautiesps@gmail.com" className="flex flex-row md:flex-col lg:flex-row">barkingbeautiesps@<span>gmail.com</span></Link>
+            <Link href="/ask-a-groomer">Ask a Groomer</Link>
           </div>
         </div>
         <div>
