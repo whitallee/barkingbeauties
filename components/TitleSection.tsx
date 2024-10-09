@@ -1,4 +1,5 @@
 import Image from "next/image";
+import bbpsFrontSign from "@/public/bbpsFrontSign.png";
 
 export default function TitleSection () {
     return (
@@ -13,7 +14,7 @@ export default function TitleSection () {
                     <span>Austin, TX 78758</span>
                 </div>
             </div> */}
-            <Image className="rounded-xl shadow-lg" src="/bbpsFrontSign.png" alt="Barking Beauties Pet Salon: Offering proffessional pet grooming and baths" width={800} height={609.5} loading="eager"/>
+            <Image className="rounded-xl shadow-lg" src={bbpsFrontSign} alt="Barking Beauties Pet Salon: Offering proffessional pet grooming and baths" width={800} height={609.58} placeholder="blur" priority/>
             <h3 className="text-2xl sm:text-3xl font-medium text-center">Elevate your pet&apos;s<br className="min-[450px]:hidden"/> grooming experience</h3>
             <div className="flex flex-col items-center justify-center text-xl sm:text-2xl text-nowrap">
                 <span>9415 Burnet Road</span>
