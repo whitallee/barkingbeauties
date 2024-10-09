@@ -76,7 +76,7 @@ export default function Home() {
         <GalleryItem src="/BathTubs.JPEG" altTxt="Bathing tubs for our proffessional dog and cat bathers and groomers"/>
       </section>
 
-      <a className="w-full flex items-center justify-center pt-12" href="#"><ChevronUp className="h-20 w-20 opacity-50"/></a>
+      <div className="w-full flex justify-center items-center pt-12"><a className="" href="#"><ChevronUp className="h-20 w-20 opacity-50"/></a></div>
 
       <div className="w-screen max-w-full footer-shadow"></div>
     </main>
