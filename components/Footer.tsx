@@ -10,6 +10,8 @@ export default function Footer(){
             <span>9415 Burnet Road</span>
             <span>Suite 101</span>
             <span>Austin, TX 78758</span>
+            <Link className="hover:scale-110 transition-all mt-2" href={"https://maps.apple.com/?address=9415%20Burnet%20Rd,%20Suite%20101,%20Austin,%20TX%20%2078758,%20United%20States&ll=30.377938,-97.724759&q=9415%20Burnet%20Rd,%20Ste%20100&t=m"}>Apple Maps Directions</Link>
+            <Link className="hover:scale-110 transition-all" href={"https://www.google.com/maps/dir//30.3778115,-97.7248951/@30.3769258,-97.7294504,17.22z/data=!4m2!4m1!3e0?entry=ttu"}>Google Maps Directions</Link>
           </div>
         </div>
         <div>
@@ -31,7 +33,7 @@ export default function Footer(){
           <div className="flex flex-col text-lg">
             <Link href="tel:+17372395747">737-239-5747</Link>
             <Link href="mailto:barkingbeautiesps@gmail.com" className="flex flex-row md:flex-col lg:flex-row">barkingbeautiesps@<span>gmail.com</span></Link>
-            <Link href="/ask-a-groomer">Ask a Groomer</Link>
+            <Link className="hover:scale-110 transition-all" href="/ask-a-groomer">Contact Our Groomer</Link>
           </div>
         </div>
         <div>
@@ -44,8 +46,6 @@ export default function Footer(){
             <Link className="hover:scale-110 transition-all" href={"/pricing"}>Pricing Webpage</Link>
             <Link className="hover:scale-110 transition-all" href={"/our-process"}>Our Process Webpage</Link>
             <Link className="hover:scale-110 transition-all" href={"/ask-a-groomer"}>Contact Our Groomer</Link>
-            <Link className="hover:scale-110 transition-all" href={"https://www.google.com/maps/dir//30.3778115,-97.7248951/@30.3769258,-97.7294504,17.22z/data=!4m2!4m1!3e0?entry=ttu"}>Google Maps Directions</Link>
-            <Link className="hover:scale-110 transition-all" href={"https://maps.apple.com/?address=9415%20Burnet%20Rd,%20Suite%20101,%20Austin,%20TX%20%2078758,%20United%20States&ll=30.377938,-97.724759&q=9415%20Burnet%20Rd,%20Ste%20100&t=m"}>Apple Maps Directions</Link>
           </div>
         </div>
         {/* <iframe
